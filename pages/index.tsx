@@ -3,7 +3,7 @@ import { Heading, Flex, Input } from '@chakra-ui/react'
 
 const Home = () => {
   const [text, setText] = useState('')
-  const [data, setData] = useState('welcome')
+  const [data, setData] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
