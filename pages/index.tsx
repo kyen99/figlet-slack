@@ -18,8 +18,8 @@ const Home = () => {
         'content-type': 'application/json',
       },
     })
-      .then((d) => d.text())
-      .then((d) => setData(d.replace(/`{3}/g, '')))
+      .then((d) => d.json())
+      .then((d) => setData(d.text.replace(/`{3}/g, '')))
   }
 
   const handleChange = (e) => {

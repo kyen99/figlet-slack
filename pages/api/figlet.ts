@@ -29,5 +29,8 @@ export default function handler(req, res) {
     whitespaceBreak: true,
   })
 
-  res.status(200).send('```' + data + '```')
+  res.status(200).json({
+    response_type: 'in_channel',
+    text: '```' + data + '```',
+  })
 }
